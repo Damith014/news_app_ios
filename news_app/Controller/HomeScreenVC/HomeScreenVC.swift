@@ -81,8 +81,6 @@ class HomeScreenVC: UIViewController {
         self.getCategory(text: self.default_category)
     }
 
-    @objc func networkStatusChanged(_ notification: Notification) {
-    }
 
     @objc func tapFilter(sender: UITapGestureRecognizer) {
         let filterScreenVC = FilterScreenVC(nibName: "FilterScreenVC", bundle: nil)

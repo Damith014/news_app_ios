@@ -44,16 +44,15 @@ class LoginScreenVC: UIViewController {
             let email = Utility.getUserProperty(key: Constant.userDefaultKeys.kUserEmailKey)
             let password = Utility.getUserProperty(key: Constant.userDefaultKeys.kUserPasswordKey)
             if email != self.text_email.text! {
-                Utility.showInformativeAlertView(vc: self, "", message: Constant.serverAPI.errorMessages.kInvalidEmail, buttonTitle: "OK", onClickCallback: {
+                Utility.showInformativeAlertView(vc: self, "", message: Constant.serverAPI.errorMessages.kIncorrectEmail, buttonTitle: "OK", onClickCallback: {
                 })
             } else if password != self.text_password.text! {
-                Utility.showInformativeAlertView(vc: self, "", message: Constant.serverAPI.errorMessages.kInvalidPassword, buttonTitle: "OK", onClickCallback: {
+                Utility.showInformativeAlertView(vc: self, "", message: Constant.serverAPI.errorMessages.kIncorrectPassword, buttonTitle: "OK", onClickCallback: {
                 })
             } else {
                 Utility.setIsUserLogin(value: true)
                 let vc = (APPDELEGATECONSTANT.APPDELEGATE?.setuphomeview())!
                 self.navigationController?.pushViewController(vc, animated: true)
-//                return self.tabBarController
             }
         }
     }

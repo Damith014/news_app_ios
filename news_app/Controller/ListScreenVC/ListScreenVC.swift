@@ -19,6 +19,11 @@ class ListScreenVC: UIViewController {
         self.setup()
         self.dataLoad(page: self.page)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.tabBarController?.tabBar.isHidden = true
+    }
 
     func setup() {
         self.navigationController?.isNavigationBarHidden = false
@@ -90,6 +95,7 @@ extension ListScreenVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsScreenVC = DetailsScreenVC(nibName: "DetailsScreenVC", bundle: nil)
         detailsScreenVC.article = self.articles[indexPath.row]
+        detailsScreenVC.fromHome = false
         self.navigationController?.isNavigationBarHidden = true
         self.navigationController?.tabBarController?.tabBar.isHidden = true
         self.navigationController?.pushViewController(detailsScreenVC, animated: true)

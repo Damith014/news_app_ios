@@ -50,6 +50,8 @@ class Constant: NSObject {
             static let kInvalidName = "Please enter valid name"
             static let kInvalidEmail = "Please enter valid email"
             static let kInvalidPassword = "Please enter valid password"
+            static let kIncorrectEmail = "Incorrect email"
+            static let kIncorrectPassword = "Incorrect password"
             static let kNoInternetConnectionMessage = "Please connect the device with internet"
             static let kErrorDefaultTitle = "Uh Oh..."
             static let kNoInternetErrorTitle = "Network Error"
