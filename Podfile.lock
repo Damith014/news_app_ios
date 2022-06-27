@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IQKeyboardManager (6.5.10)
+  - Kingfisher (4.10.1)
+  - KVNProgress (2.3.5)
+  - ReachabilitySwift (3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - IQKeyboardManager (~> 6.2)
+  - Kingfisher (~> 4.0)
+  - KVNProgress (~> 2.3)
+  - ReachabilitySwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManager
+    - Kingfisher
+    - KVNProgress
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+
+PODFILE CHECKSUM: 8e842be4179eeb07a58764b2ac5c69ea2b57c320
+
+COCOAPODS: 1.11.2

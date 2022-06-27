@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="264" id="KGk-i7-Jjw" customClass="HeadCardTableViewCell" customModule="news_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayA-vH-q7q">
+                        <rect key="frame" x="5" y="5" width="310" height="252"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vte-4R-u73">
+                                <rect key="frame" x="0.0" y="41.5" width="310" height="210.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JWv-Pm-cAQ">
+                                    <size key="itemSize" width="310" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leatest News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uag-ef-SML">
+                                <rect key="frame" x="0.0" y="12" width="102.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-c3-MXu">
+                                <rect key="frame" x="258.5" y="12" width="43.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1fb-c3-MXu" secondAttribute="trailing" constant="8" id="39B-H9-pk7"/>
+                            <constraint firstItem="1fb-c3-MXu" firstAttribute="centerY" secondItem="uag-ef-SML" secondAttribute="centerY" id="G3Y-dD-INb"/>
+                            <constraint firstItem="uag-ef-SML" firstAttribute="top" secondItem="ayA-vH-q7q" secondAttribute="top" constant="12" id="JfG-la-3Cg"/>
+                            <constraint firstItem="uag-ef-SML" firstAttribute="leading" secondItem="ayA-vH-q7q" secondAttribute="leading" id="L3j-ak-xvh"/>
+                            <constraint firstItem="1fb-c3-MXu" firstAttribute="top" secondItem="ayA-vH-q7q" secondAttribute="top" constant="12" id="dLA-rA-Tmv"/>
+                            <constraint firstItem="Vte-4R-u73" firstAttribute="leading" secondItem="ayA-vH-q7q" secondAttribute="leading" id="euz-r7-Uu4"/>
+                            <constraint firstAttribute="bottom" secondItem="Vte-4R-u73" secondAttribute="bottom" id="jyj-0U-hdu"/>
+                            <constraint firstItem="Vte-4R-u73" firstAttribute="top" secondItem="uag-ef-SML" secondAttribute="bottom" constant="10" id="ln8-3M-qTI"/>
+                            <constraint firstAttribute="height" constant="252" id="rCn-tF-9EX"/>
+                            <constraint firstAttribute="trailing" secondItem="Vte-4R-u73" secondAttribute="trailing" id="wwj-mg-PGV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ayA-vH-q7q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0K2-6E-7jz"/>
+                    <constraint firstAttribute="bottom" secondItem="ayA-vH-q7q" secondAttribute="bottom" constant="5" id="8f3-zW-Bxt"/>
+                    <constraint firstItem="ayA-vH-q7q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="HXc-ie-vML"/>
+                    <constraint firstAttribute="trailing" secondItem="ayA-vH-q7q" secondAttribute="trailing" constant="5" id="hDu-Ok-lQ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label_see_all" destination="1fb-c3-MXu" id="wTg-O0-oEf"/>
+                <outlet property="main_collection_view" destination="Vte-4R-u73" id="MF2-EX-XdE"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="212.27678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
