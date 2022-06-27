@@ -1,8 +1,13 @@
 # News App
 
-### How to run the project?
+Assignment ios swift() native app 
 
-1. Clone this repo
-2. Open shell window and navigate to project folder
-3. Run `pod install`
-4. Open `news_app.xcworkspace` and run the project on selected device or simulator
+## How to build demo application
+1. Download or clone this repository using the command `https://github.com/Damith014/news_app_ios`.
+2. Run the following commands in Terminal:
+```bash
+$ cd news_app_ios
+$ pod install
+$ open news_app.xcworkspace
+```
+3. Run the project on selected device or simulator
